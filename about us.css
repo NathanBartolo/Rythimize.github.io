@@ -1,0 +1,142 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+}
+
+header img {
+    width: 200px; /* Adjust logo size as needed */
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+.about-us {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-us h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-us p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #202223;
+    color: #fff;
+    padding: 60px 0;
+    text-align: left; /* Align text to the left */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Added padding to the sides */
+}
+
+.footer-logo img {
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.footer-brands{
+    margin-right: 100px;
+}
+
+.footer-links,
+.footer-brands {
+    text-align: left;
+}
+
+.footer-links h2,
+.footer-brands h2 {
+    margin-bottom: 20px;
+}
+
+.footer-links ul,
+.footer-brands ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li,
+.footer-brands ul li {
+    margin-bottom: 12px;
+}
+
+.footer-links ul li a,
+.footer-brands ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover,
+.footer-brands ul li a:hover {
+    color: #ccc;
+}
+
+.social-icons {
+    margin-top: 20px;
+    margin-left: 55px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Footer bottom styles */
+.footer-bottom {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #666; /* Add a border on top */
+    padding-top: 20px; /* Add padding on top */
+}
+
+.back-to-top a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.back-to-top a:hover {
+    color: #ccc;
+}
+
+.copyright-info {
+    color: #ccc;
+    margin: 0 auto; /* Align to the middle */
+}

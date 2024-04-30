@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Your task is to build an interactive website using web technologies. Your project 
+should make use of the range of techniques you have explored during the module and demonstrate your understanding of these techniques and ability to deploy them successfully. 
+For this assessment you have to decide a theme on which you will create your website. 
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rythimize</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+
+</head>
+
+<body>
+    <!-- This is the code for the header section.-->
+    <header class="banner">
+        <!--nav bar-->
+        <div class="navbar">
+            <img src="images/Frame 19.png" alt="Frame 19" class="rlogo">
+            <img src="images/menu white.png" alt="Menu" class="menu-icon">
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="#featured-products" class="scroll-link">featured</a></li>
+                <li><a href="about us.html">about us</a></li>
+                <li><a href="contact us.html">contact us</a></li>
+            </ul>
+            <img src="images/search-icon.png" alt="Search" class="search-icon">
+        </div>
+        <!--Called this tag to play a video as the banner backround of the header section -->
+        <video autoplay muted loop>
+            <source src="images/bg2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!--This is for the center content that will overlay the video-->
+        <div class="center-content">
+            <div>
+                <h3>WHERE STRINGS TAKE FLIGHT, MUSIC FINDS ITS WINGS</p>
+                <H1>RYTHIMIZE GUITARS</H1>
+                <h2>The Home of Fine Guitars </h2>
+                <p>Rythimize Guitars is the maker of acoustic and electric guitars in the UAE. Shop signature models designed to last a lifetime on our online guitar store. Jam out with stratocaster guitars, telecaster guitars and les paul guitars available exclusively online for sale in the UAE and worldwide.   </p>
+                <button type="button" id="getStartedBtn">Get Started</button>
+            </div>
+        </div>
+    </header>    
+    <!--This section is for the brand products. i created a divs for columns that has 2 rows, it also cylcling to a patteron of descriptopn on the first and picture on the right and voce versa on the next columns-->
+    <section class="container" id="products">
+        <div class="column">
+            <img src="images/clapton.jpg" alt="Brand Picture 1" id="BP">
+        </div>
+        <div class="column">
+            <img src="images/fender logo.png" alt="Fender Logo" class="logo">
+            <p>Explore Fender guitars, embodying over 75 years of expertise. From the iconic Stratocaster to the versatile Jazzmaster, each instrument exudes innovation and quality. Whether you're a seasoned pro or a beginner, discover the unmatched sound and style that has made Fender a true legend in the music industry.</p>
+            <a href="fender.html" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+    
+    <section class="container">
+        <div class="column">
+            <!--image -->
+            <img src="images/gibson logo.png" alt="gibson logo" class="logo">
+            <!--description-->
+            <p>Gibson guitars epitomize musical excellence with over a century of heritage. From the legendary Les Paul to the timeless SG and versatile ES series, each Gibson instrument exudes craftsmanship and innovation. Experience unparalleled tone and performance, making Gibson the choice of discerning musicians worldwide.</p>
+            <a href="gibson.html" class="cta-button">Shop Now</a>
+        </div>
+        <div class="column">
+            <img src="images/page.jpg" alt="Brand Picture 2" id="BP">
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="column">
+            <img src="images/john mayer.jpg" alt="Brand Picture 1" id="BP">
+        </div>
+        <div class="column">
+            <img src="images/prs logo.png" alt="gibson logo" class="logo">
+            <p>PRS guitars represent the pinnacle of craftsmanship and innovation. With meticulous attention to detail, each instrument combines exquisite design and premium materials to deliver unparalleled tone and playability. From the iconic Custom 24 to the versatile SE series, PRS guitars inspire musicians to reach new heights of creativity and expression.</p>
+            <a href="prs.html" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="column">
+            <img src="images/ibanez logo.png" alt="gibson logo" class="logo">
+            <p>Ibanez guitars stand as a testament to innovation and versatility. With a legacy spanning decades, each instrument is crafted with precision and passion. From the iconic RG series to the versatile S and Artcore models, Ibanez guitars offer unmatched performance and tone, empowering musicians to explore new sonic horizons.</p>
+            <a href="ibanez.html" class="cta-button">Shop Now</a>
+        </div>
+        <div class="column">
+            <img src="images/steve vai.jpg" alt="Brand Picture 2" id="BP">
+        </div>
+    </section>
+    <!-- This section is for the featured products conatiner. i created div classes fopr each product that has
+    the image, name, and a button to view more deatils. i also added a hover picture.-->
+    <section class="featured-products" id="featured-products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="fender/tele yellow.webp" alt="Product 1" class="product-img" data-hover="fender/tele yellow hover.webp">
+                    <h3>Fender American Telecaster</h3>
+                    <p></p>
+                    <button type="button">View Details</button>
+                </div>
+    
+                <div class="product">
+                    <img src="fender/custom.webp" alt="Product 1" class="product-img" data-hover="fender/custom hover.webp">
+                    <h3>Fender Custom Shop</h3>
+                    <p></p>
+                    <button type="button">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="fender/24.webp" alt="Product 1" class="product-img" data-hover="fender/24 hover.webp">
+                    <h3>Prs Custom SE 24 Green</h3>
+                    <p></p>
+                    <button type="button">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="fender/sky moon.webp" alt="Product 1" class="product-img" data-hover="fender/sky moon hover.webp">
+                    <h3>PRS SE Silver Sky Moon White</h3>
+                    <p></p>
+                    <button type="button">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="fender/es35.webp" alt="Product 1" class="product-img" data-hover="fender/es35 hover.webp">
+                    <h3>Share:     
+                        Gibson ES 345TDC 1967</h3>
+                    <p></p>
+                    <button type="button">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="fender/sg.webp" alt="Product 2" class="product-img" data-hover="fender/sg hover.webp">
+                    <h3>Gibson SG Special 1969 </h3>
+                    <p></p>
+                    <button type="button">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="fender/prestige.webp" alt="Product 2" class="product-img" data-hover="fender/prestige hover.webp">
+                    <h3>Ibanez Prestige RGA622XH</h3>
+                    <p></p>
+                    <button type="button">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="fender/deb.webp" alt="Product 2" class="product-img" data-hover="fender/deb hover.webp">
+                    <h3>Ibanez AZ47P1QM-DEB</h3>
+                    <p></p>
+                    <button type="button">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--This section is to display the brand logo in one column. I just created divs for every image-->
+    <section class="brand-logos">
+        <div class="container">
+            <div class="column">
+                <img src="images/fender logo.png" alt="Brand Logo 1">
+            </div>
+            <div class="column">
+                <img src="images/gibson logo.png" alt="Brand Logo 2">
+            </div>
+            <div class="column">
+                <img src="images/prs logo black.png" alt="Brand Logo 3">
+            </div>
+            <div class="column">
+                <img src="images/ibanez logo.png" alt="Brand Logo 4">
+            </div>
+        </div>
+    </section>
+
+    <!--This is a div for the h2 of the testimonial section. 
+    I put it outside the section because the grid is affecting the h2 when i include it i side the section-->
+    <div class="we">
+        <h1>We Guarantee</h1>
+    </div>
+    <!--This is for the testinonial section. I created a  div classes for every row that has a icon, H2, and paragraph-->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="testimonial">
+                <div class="testimonial-item">
+                    <img src="images/quality.avif" alt="Top Quality Icon">
+                    <h2>Top Quality</h2>
+                    <p>Our commitment to quality is evident in every curve, string and tune. Rythimize Guitars promises uncompromising quality and design. </p>
+                </div>
+                <div class="testimonial-item">
+                    <img src="images/unique.avif" alt="Unique Design Icon">
+                    <h2>Unique Design</h2>
+                    <p>Our commitment to quality is evident in every curve, string and tune. Rythimize Guitars promises uncompromising quality and design. </p>
+                </div>
+                <div class="testimonial-item">
+                    <img src="images/quick.avif" alt="Quick Delivery Icon">
+                    <h2>Quick Delivery</h2>
+                    <p>Our commitment to quality is evident in every curve, string and tune. Rythimize Guitars promises uncompromising quality and design. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--This section is for the frequently asked questions. I created divs to divide the questions and answers per column-->
+    <div class="faq-container">
+        <h2>FREQUENTLY ASKED QUESTIONS</h2>
+        <div class="faq">
+            <h3 class="question">What payment methods do you accept?</h3>
+            <div class="answer">
+                <p>We accept Visa, Mastercard, American Express, and PayPal.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <h3 class="question">How do I track my order?</h3>
+            <div class="answer">
+                <p>Once your order has been shipped, you will receive a tracking number via email.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <h3 class="question">What is your return policy?</h3>
+            <div class="answer">
+                <p>We offer a 30-day return policy for all unused items. Please refer to our Returns page for more information.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <h3 class="question">Do you offer international shipping?</h3>
+            <div class="answer">
+                <p>Yes, we offer international shipping to most countries. Shipping rates may vary depending on the destination.</p>
+            </div>
+        </div>
+    </div>
+    <!-- This section is for the newsletter that will ask the user to input their email. i added a input function for that part-->
+    <section class="newsletter" id="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Stay updated with the latest arrivals, exclusive offers, and more.</p>
+        <form action="#" method="post">
+            <input type="email" name="email" placeholder="Enter your email address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+</div>
+    <!--This section is for the more details part. so i created 3 divs for 3 rows and each iv has a img and h2-->
+    <section class="last-section">
+        <div class="container">
+            <div class="last">
+                <div class="last-item">
+                    <img src="images/box.png" alt="box">
+                    <h2>FREE DELIVERY!</h2>
+                </div>
+                <div class="last-item">
+                    <img src="images/messenger.png" alt="messenger">
+                    <h2>24/7 SUPPORT</h2>
+                </div>
+                <div class="last-item">
+                    <img src="images/credit-card.png" alt="Quick Delivery Icon">
+                    <h2>SHOP AND PAY SAFELY</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- This section is for the footer. it has 2 parts the main footer and the
+         bottom part of the footer to put the copyright on the main part, i created 3 rows for logo and the other two is for the links-->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/Frame 19.png" alt="Rythimize Logo">
+            </div>
+            <div class="footer-links">
+                <h2>Useful Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#featured-products" class="scroll-link">featured</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-brands">
+                <h2>Brands</h2>
+                <ul>
+                    <li><a href="fender.html">Fender</a></li>
+                    <li><a href="gibson.html">Gibson</a></li>
+                    <li><a href="prs.html">PRS</a></li>
+                    <li><a href="ibanez.html">Ibanez</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="images/fb.png" alt="Facebook"></a>
+            <a href="#"><img src="images/linkedin.png" alt="Twitter"></a>
+            <a href="#"><img src="images/ig.png" alt="Instagram"></a>
+        </div>
+        <div class="footer-bottom">
+            <div class="back-to-top">
+            </div>
+            <div class="copyright-info">
+                &copy; 2024 Rythimize. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
